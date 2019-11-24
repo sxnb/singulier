@@ -1,0 +1,146 @@
+@import "./tokens.scss";
+
+.button-base {
+  color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px;
+  cursor: pointer;
+  outline: 0;
+
+  &.button-primary {
+    background: map-get($colors, "primary");
+    border: solid 1px map-get($colors, "primary");
+  }
+
+  &.button-primary:hover {
+    background: scale-color(map-get($colors, "primary"), $lightness: -10%);
+  }
+
+  &.button-primary:active {
+    background: scale-color(map-get($colors, "primary"), $lightness: -20%);
+  }
+
+  &.button-secondary {
+    background: map-get($colors, "secondary");
+    border: solid 1px map-get($colors, "secondary");
+    color: #000000;
+  }
+
+  &.button-secondary:hover {
+    background: scale-color(map-get($colors, "secondary"), $lightness: -10%);
+  }
+
+  &.button-secondary:active {
+    background: scale-color(map-get($colors, "secondary"), $lightness: -20%);
+  }
+
+  &.button-tertiary {
+    background: map-get($colors, "transparent");
+    border: solid 1px map-get($colors, "transparent");
+    color: map-get($colors, "tertiary");
+  }
+
+  &.button-tertiary:hover {
+    background: map-get($colors, "transparent10");
+  }
+
+  &.button-tertiary:active {
+    background: map-get($colors, "transparent20");
+  }
+
+  &.button-danger {
+    background: map-get($colors, "danger");
+    border: solid 1px map-get($colors, "danger");
+  }
+
+  &.button-danger:hover {
+    background: scale-color(map-get($colors, "danger"), $lightness: -10%);
+  }
+
+  &.button-danger:active {
+    background: scale-color(map-get($colors, "danger"), $lightness: -20%);
+  }
+
+}
+
+.button-outline {
+  border: solid 1px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+    background: map-get($colors, "transparent10");
+    transition: all 0.2s;
+  }
+
+  &.button-primary {
+    background: rgba(0, 0, 0, 0);
+    border: solid 1px map-get($colors, "primary");
+    color: map-get($colors, "primary");
+  }
+
+  &.button-primary:hover {
+    color: map-get($colors, "white");
+  }
+
+  &.button-primary:active {
+    border: solid 1px map-get($colors, "primary");
+    background: map-get($colors, "primary");
+    color: map-get($colors, "white");
+  }
+
+  &.button-secondary {
+    background: rgba(0, 0, 0, 0);
+    border: solid 1px map-get($colors, "secondary");
+  }
+
+  &.button-secondary:active {
+    border: solid 1px map-get($colors, "secondary");
+    background: map-get($colors, "secondary");
+  }
+
+  &.button-tertiary:active {
+    background: rgba(0, 0, 0, 0);
+    border: map-get($colors, "tertiary");
+    background: map-get($colors, "tertiary");
+    color: map-get($colors, "white");
+  }
+
+  &.button-danger {
+    background: rgba(0, 0, 0, 0);
+    border: solid 1px map-get($colors, "danger");
+    color: map-get($colors, "danger");
+  }
+
+  &.button-danger:hover {
+    color: map-get($colors, "white");
+  }
+
+  &.button-danger:active {
+    border: solid 1px map-get($colors, "danger");
+    background: map-get($colors, "danger");
+    color: map-get($colors, "white");
+  }
+}
+
+.button-large {
+  font-size: 18px;
+  padding: 10px 14px;
+}
+
+.button-small {
+  font-size: 12px;
+  padding: 3px 8px;
+}
+
+.button-block {
+    width: 100%;
+}

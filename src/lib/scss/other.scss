@@ -1,0 +1,367 @@
+@import "./tokens.scss";
+
+.block {
+  width: 100%;
+}
+
+* [block] {
+  width: 100%;
+}
+
+/* badges */
+.badge {
+  display: inline;
+  font-size: 12px;
+  line-height: 10px;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.badge-large {
+  font-size: 14px;
+  padding: 7px;
+}
+
+.badge-primary {
+  background: map-get($colors, "primary");
+}
+
+.badge-secondary {
+  background: map-get($colors, "light-gray");
+  color: map-get($colors, "dark-gray");
+}
+
+.badge-success {
+  background: map-get($colors, "success");
+}
+
+.badge-warning {
+  background: map-get($colors, "warning");
+}
+
+.badge-danger {
+  background: map-get($colors, "danger");
+}
+
+.badge-info {
+  background: map-get($colors, "info");
+}
+
+/* breadcrumbs */
+.breadcrumbs-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.breadcrumbs-divider {
+  display: inline;
+  padding: 0 8px;
+  color: map-get($colors, "light-gray");
+}
+
+/* progress */
+.progress-container {
+  border: solid 1px map-get($colors, "light-gray");
+  border-radius: 5px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 16px;
+  border: 0;
+}
+
+.progress-primary {
+  background: map-get($colors, "primary");
+}
+
+.progress-secondary {
+  background: map-get($colors, "light-gray");
+  color: map-get($colors, "dark-gray");
+}
+
+.progress-success {
+  background: map-get($colors, "success");
+}
+
+.progress-warning {
+  background: map-get($colors, "warning");
+}
+
+.progress-danger {
+  background: map-get($colors, "danger");
+}
+
+.progress-info {
+  background: map-get($colors, "info");
+}
+
+/* avatar */
+.avatar {
+  display: inline-block;
+  border-radius: 900px;
+  overflow: hidden;
+  border: solid 1px map-get($colors, "gray");
+}
+
+/* avatar */
+.initials {
+  border-radius: 900px;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: map-get($colors, "white");
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* toast */
+.toast-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: 1040;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  width: 200px;
+  min-height: 70px;
+  color: map-get($colors, "white");
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, "screen-sm")) {
+  .toast {
+    width: calc(100vw - 10px);
+  }
+}
+
+.toast:hover {
+  filter: brightness(95%);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.toast-success {
+  background: map-get($colors, "success");
+}
+
+.toast-warning {
+  background: map-get($colors, "warning");
+}
+
+.toast-danger {
+  background: map-get($colors, "danger");
+}
+
+.toast-info {
+  background: map-get($colors, "info");
+}
+
+/* color */
+.color-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.color-circle:hover {
+  border: solid 1px #dddddd;
+}
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  .tooltip-text {
+    display: none;
+    visibility: hidden;
+    width: 120px;
+    max-width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip-text-right {
+    left: calc(100% + 5px);
+  }
+
+  .tooltip-text-right::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%) translateY(-50%) translateY(1px);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+
+  .tooltip-text-left {
+    right: calc(100% + 5px);
+  }
+
+  .tooltip-text-left::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) translateY(1px);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+
+  .tooltip-text-top {
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .tooltip-text-top::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  .tooltip-text-bottom {
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .tooltip-text-bottom::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-100%);
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  display: inline-block;
+}
+
+/* alert */
+.alert {
+  border-radius: 3px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  margin: 8px 5px;
+  box-sizing: border-box;
+
+  .alert-content {
+    flex: 1;
+    flex-grow: 1;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  .alert-close {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 4px 10px;
+    background: map-get($colors, "transparent10");
+    line-height: 20px;
+    font-size: 11px;
+  }
+
+  .alert-close:hover {
+    background: map-get($colors, "transparent20");
+  }
+}
+
+.alert-info {
+  background: map-get($colors, "info");
+}
+
+.alert-primary {
+  background: map-get($colors, "primary");
+}
+
+.alert-secondary {
+  background: map-get($colors, "secondary");
+  color: map-get($colors, "black");
+}
+
+.alert-warning {
+  background: map-get($colors, "warning");
+}
+
+.alert-success {
+  background: map-get($colors, "success");
+}
+
+.alert-danger {
+  background: map-get($colors, "danger");
+}
+
+/* helper classes */
+.mobile-menu {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background: #ffffff;
+  z-index: 100;
+  border-bottom: solid 1px #cccccc;
+  box-shadow: 0 0 3px #333333;
+}

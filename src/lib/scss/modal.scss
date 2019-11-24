@@ -1,0 +1,104 @@
+@import './tokens.scss';
+
+.modal-backdrop {
+    z-index: 1020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    z-index: 1030;
+    position: fixed;
+    top: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background-color: #ffffff;
+    min-width: 400px;
+    max-height: 95vh;
+    overflow-y: auto;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    overflow-x: auto;
+    max-width: 800px;
+}
+
+.modal-inline {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: unset;
+    z-index: 1000;
+}
+
+.modal-large {
+    min-width: 800px;
+}
+
+.modal-xlarge {
+    min-width: 1000px;
+}
+
+.modal-close-button {
+    float: right;
+    margin: 0.3em 0.4em;
+    cursor: pointer;
+    font-size: 16px;
+    color: map-get($colors, 'gray');
+    border-radius: 3px;
+    background: #ffffff;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 16px;
+}
+
+.modal-close-button:hover {
+    filter: brightness(95%);
+}
+
+.modal-close-button:focus {
+    filter: brightness(85%);
+}
+
+.modal-header {
+    width: 100%;
+    padding: 1em 1em 0 1em;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.modal-content {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 0.9em;
+}
+
+.modal-footer {
+    width: 100%;
+    padding: 1em;
+    background-color: map-get($colors, 'secondary');
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    * {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, 'screen-sm')) {
+    .modal {
+        left: 1vw;
+        width: 98vw;
+        transform: none;
+        top: 1vh;
+        min-width: unset;
+    }
+}

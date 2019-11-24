@@ -1,0 +1,27 @@
+.layout-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1111;
+
+  .dashboard-app-row {
+    height: calc(100vh - 130px);
+    background: #ffffff;
+    overflow-y: auto;
+  }
+  
+  .dashboard-menu {
+    background-color: #ecf0f1;
+  }
+  
+  .nav-icon {
+    margin-right: 5px;
+    font-size: 20px !important;
+  }
+
+  li.nav {
+    margin: 4px 0;
+  }
+}

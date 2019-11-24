@@ -1,0 +1,29 @@
+@import './tokens.scss';
+
+.table {
+
+}
+
+.table-header-row {
+    background: map-get($colors, 'primary');
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.table-header-cell, .table-cell {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.table-header-cell-condensed, .table-cell-condensed {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.table-row:nth-child(even) {
+    background-color: map-get($colors, 'lightest-gray');
+}
+
+.table-row:nth-child(odd) {
+    background-color: map-get($colors, 'lightest-blue');
+}

@@ -1,0 +1,27 @@
+@import './tokens.scss';
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.hint {
+    margin: 5px 0;
+    color: map-get($colors, 'dark-gray');
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px 0;
+    color: map-get($colors, 'dark-gray');
+}
+
+.heading-condensed, .text-condensed {
+    margin-top: 0;
+    margin-bottom: 0;
+}

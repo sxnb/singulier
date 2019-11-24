@@ -1,0 +1,620 @@
+@import "./tokens.scss";
+
+div {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.content {
+  width: 100%;
+  padding: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.container-flex {
+    display: flex;
+}
+
+* [condensed] {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.separator {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  border-radius: 5px;
+  border: solid 1px map-get($colors, "light-gray");
+  display: inline-block;
+  margin: 5px;
+}
+
+.card-header {
+  font-size: 1.5em;
+  padding: 1.5em 0.5em;
+  background-color: map-get($colors, "secondary");
+}
+
+.card-body {
+  padding: 1.5em 0.5em;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.enum-row {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .enum-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.enum-column {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+
+  .enum-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.col {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col:first-child {
+  padding-left: 0;
+}
+
+.col:last-child {
+  padding-right: 0;
+  padding: 0;
+}
+
+.col-inline {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.col-left {
+  justify-content: flex-start;
+}
+
+.col-right {
+  justify-content: flex-end;
+}
+
+.col-v-center {
+  align-items: center;
+}
+
+.col-h-center {
+  justify-content: center;
+}
+
+.col-menu {
+  background-color: map-get($colors, "lightest-gray");
+}
+
+.col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 0;
+  background-color: map-get($colors, "primary");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .row {
+    padding: 0;
+  }
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  background-color: map-get($colors, "dark-gray");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: map-get($colors, "white");
+  font-size: 13px;
+}
+
+.show-lt-sm,
+.show-lt-md,
+.show-lt-lg,
+.show-lt-xl,
+.show-gt-sm,
+.show-gt-md,
+.show-gt-lg,
+.show-gt-xl {
+  display: none;
+}
+
+@media screen and (max-width: map-get($breakpoints, "screen-xl")) {
+  .hide-lt-xl {
+    display: none;
+  }
+
+  .show-lt-xl {
+    display: flex;
+  }
+
+  .col-xl-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+
+  .col-xl-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-xl-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-xl-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-xl-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .col-xl-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-xl-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .col-xl-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+
+  .col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, "screen-lg")) {
+  .hide-lt-lg {
+    display: none;
+  }
+
+  .show-lt-lg {
+    display: flex;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .col-lg-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, "screen-md")) {
+  .hide-lt-md {
+    display: none;
+  }
+
+  .show-lt-md {
+    display: flex;
+  }
+
+  .col-md-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+
+  .col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .col-md-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, "screen-sm")) {
+  .hide-lt-sm {
+    display: none;
+  }
+
+  .show-lt-sm {
+    display: flex;
+  }
+
+  .col-sm-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+
+  .col-sm-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-sm-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .col-sm-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, "screen-sm")) {
+  .show-gt-sm {
+    display: flex;
+  }
+
+  .hide-gt-sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, "screen-md")) {
+  .show-gt-md {
+    display: flex;
+  }
+
+  .hide-gt-md {
+    display: none;
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, "screen-lg")) {
+  .show-gt-lg {
+    display: flex;
+  }
+
+  .hide-gt-lg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: map-get($breakpoints, "screen-xl")) {
+  .show-gt-xl {
+    display: flex;
+  }
+
+  .hide-gt-xl {
+    display: none;
+  }
+}
+
+* [dark] {
+  background-color: map-get($colors, "dark-gray");
+  color: map-get($colors, "lightest-gray");
+}
+
+.eva {
+  transform: none !important;
+}
+
+.col-dark,
+.row-dark,
+.container-dark,
+.content-dark,
+.modal-dark {
+  background-color: map-get($colors, "dark-gray");
+  color: map-get($colors, "lightest-gray");
+}
+
+.col-pull-right,
+.row-pull-right,
+.enum-pull-right,
+.button-pull-right,
+.container-pull-right,
+.content-pull-right {
+  text-align: right;
+}
+
+.col-pull-left,
+.row-pull-left,
+.enum-pull-left,
+.button-pull-left,
+.container-pull-left,
+.content-pull-left {
+  text-align: left;
+}
+
+.col-pull-h-center,
+.row-pull-h-center,
+.enum-pull-v-center, // not a typo
+.container-pull-h-center,
+.content-pull-h-center {
+  text-align: center;
+  align-items: center;
+}
+
+.col-pull-v-center,
+.row-pull-v-center,
+.enum-pull-h-center,
+.container-pull-v-center,
+.content-pull-v-center {
+  justify-content: center;
+}

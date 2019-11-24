@@ -1,0 +1,27 @@
+.demo-col {
+    border: dashed 1px #cccccc;
+}
+
+.nav {
+    a {
+        color: #000000 !important;
+        text-decoration: none !important;
+    }
+}
+
+.logo {
+    height: 25px;
+    margin-left: 10px;
+}
+
+code, code span {
+    font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace !important;
+    font-size: 13px;
+}
+
+.ds-menu-container {
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}

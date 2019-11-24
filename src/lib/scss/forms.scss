@@ -1,0 +1,204 @@
+@import "./tokens.scss";
+
+.form-input {
+  border: solid 1px map-get($colors, "light-gray");
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+
+.form-select-input {
+  border: solid 1px map-get($colors, "light-gray");
+  border-radius: 5px;
+  padding: 8px 5px;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #fff;
+  line-height: 5px;
+  height: 31px;
+}
+
+.form-textarea {
+  border: solid 1px map-get($colors, "light-gray");
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+
+.input-block {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: map-get($colors, "primary");
+
+  .nav {
+    color: map-get($colors, "primary");
+  }
+}
+
+.dropdown-content-right {
+  right: 0;
+}
+
+.dropdown-content-left {
+  left: 0;
+}
+
+.dropdown-toggle:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: map-get($breakpoints, "screen-sm")) {
+  .form-input {
+    width: 100%;
+  }
+
+  .form-select-input {
+    width: 100%;
+  }
+}
+
+.form-checkbox-container {
+  .form-checkbox-input:checked,
+  .form-checkbox-input:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  .form-checkbox-input:checked + label,
+  .form-checkbox-input:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+  }
+  .form-checkbox-input:checked + label:before,
+  .form-checkbox-input:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid map-get($colors, "lighter-gray");
+    background: map-get($colors, "white");
+  }
+  .form-checkbox-input:checked + label:after,
+  .form-checkbox-input:not(:checked) + label:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: map-get($colors, "primary");
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form-checkbox-input:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  .form-checkbox-input:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .form-checkbox-input:disabled:checked + label:before,
+  .form-checkbox-input:disabled:not(:checked) + label:before {
+    border-color: map-get($colors, "lighter-gray");
+    background-color: map-get($colors, "lightest-gray");
+  }
+  .form-checkbox-input:disabled:checked + label:after {
+    background: map-get($colors, "lighter-gray");
+  }
+}
+
+.form-radio-container {
+  .form-radio-input:checked,
+  .form-radio-input:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  .form-radio-input:checked + label,
+  .form-radio-input:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+  }
+  .form-radio-input:checked + label:before,
+  .form-radio-input:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid map-get($colors, "lighter-gray");
+    background: map-get($colors, "white");
+    border-radius: 9px;
+  }
+  .form-radio-input:checked + label:after,
+  .form-radio-input:not(:checked) + label:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: map-get($colors, "primary");
+    border-radius: 4px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .form-radio-input:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  .form-radio-input:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .form-radio-input:disabled:checked + label:before,
+  .form-radio-input:disabled:not(:checked) + label:before {
+    border-color: map-get($colors, "lighter-gray");
+    background-color: map-get($colors, "lightest-gray");
+  }
+  .form-radio-input:disabled:checked + label:after {
+    background: map-get($colors, "lighter-gray");
+  }
+}

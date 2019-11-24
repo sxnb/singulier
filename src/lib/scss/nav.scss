@@ -1,0 +1,151 @@
+@import './tokens.scss';
+
+.tabs-container {
+    border-bottom: solid 1px map-get($colors, 'lighter-gray');
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.tab {
+    cursor: pointer;
+    color: map-get($colors, 'gray');
+    padding: 0.5rem 1rem;
+}
+.tab:hover {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: map-get($colors, 'lightest-gray');
+}
+
+.tab-active {
+    color: map-get($colors, 'primary');
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top: solid 1px map-get($colors, 'lighter-gray');
+    border-right: solid 1px map-get($colors, 'lighter-gray');
+    border-left: solid 1px map-get($colors, 'lighter-gray');
+    background: #ffffff;
+    border-bottom: solid 1px #ffffff;
+    box-sizing: border-box;
+    margin-bottom: -1px;
+}
+
+.tab-active:hover {
+    background: #ffffff;
+}
+
+.tab-disabled {
+    cursor: not-allowed;
+    color: map-get($colors, 'lighter-gray');
+    pointer-events: none;
+}
+
+.pills-container {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.pills-container-column {
+    flex-direction: column;
+}
+
+.pill {
+    cursor: pointer;
+    color: map-get($colors, 'primary');
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+}
+
+.pill-active {
+    background-color: map-get($colors, 'primary');
+    color: map-get($colors, 'white');
+}
+
+.pill-disabled {
+    cursor: not-allowed;
+    color: map-get($colors, 'lighter-gray');
+    pointer-events: none;
+}
+
+.nav-container {
+    display: flex;
+    // -ms-flex-wrap: wrap;
+    // flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+    box-sizing: border-box;
+    color: map-get($colors, 'primary');
+
+    .nav-separator-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-separator {
+        width: 1px;
+        height: 60%;
+        border-bottom: 0;
+        border-left: solid 1px map-get($colors, 'light-gray');
+    }
+}
+
+.nav-container-column {
+    flex-direction: column;
+    box-sizing: border-box;
+
+    .nav-separator {
+        width: 100%;
+        height: 1px;
+        border-bottom: solid 1px map-get($colors, 'light-gray');
+        border-left: 0;
+    }
+
+    .nav {
+        cursor: pointer;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 100%;
+        text-decoration: none;
+        color: map-get($colors, 'dark-gray');
+    }    
+}
+
+.nav {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+}
+
+.nav:hover {
+    background: map-get($colors, 'transparent10');
+}
+
+.nav-active {
+    font-weight: bold;
+}
+
+.nav-disabled {
+    cursor: not-allowed;
+    color: map-get($colors, 'lighter-gray');
+    pointer-events: none;
+}

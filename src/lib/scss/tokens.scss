@@ -1,0 +1,36 @@
+$colors: (
+    'primary': #487eb0,
+    'secondary': #f5f6fa,
+    'tertiary': #333333,
+    'white': #ffffff,
+    'black': #000000,
+    'gray': #718093,
+    'light-gray': #dcdde1,
+    'lighter-gray': #c8d6e5,
+    'lightest-gray': #f5f6fa,
+    'lightest-blue': #dfe4ea,
+    'dark-gray': #353b48,
+    'success': #1dd1a1,
+    'warning': #ff9f43,
+    'danger': #c2004b,
+    'info': #2e86de,
+    'transparent': rgba(0, 0, 0, 0),
+    'transparent10': rgba(0, 0, 0, 0.1),
+    'transparent20': rgba(0, 0, 0, 0.2),
+);
+
+$breakpoints: (
+    'screen-sm': 575.99px,
+    'screen-md': 767.99px,
+    'screen-lg': 991.99px,
+    'screen-xl': 1199.99px,
+);
+
+$spacers: (
+    separator1: '1px',
+    separator2: '2px',
+    separator4: '4px',
+    separator8: '8px',
+    separator12: '12px',
+    separator16: '16px',
+);

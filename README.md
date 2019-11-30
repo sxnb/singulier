@@ -1,4 +1,5 @@
 ![](https://img.shields.io/badge/-Please%20note%20that%20the%20project%20is%20still%20under%20a%20lot%20of%20development%20and%20bugs%20may%20occur.-red)
+<br /><br />
 
 <p align="center">
   <a href="https://getbootstrap.com/">

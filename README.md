@@ -18,10 +18,10 @@
 ## Quick start with components (Singulier)
 
 * Install from npm:
-```npm install @colorcode/singulier```
+```npm install singulier```
 
 * Include components in your application:
-```import { Button } from '@colorcode/singulier';```
+```import { Button } from 'singulier';```
 
 * Customize your component using the `factor` property
 ```<Button factor="primary outline">primary</Button>```

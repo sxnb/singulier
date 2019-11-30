@@ -12,7 +12,7 @@ export function Intro() {
                 <div className="jumbo-content">
                     <div>
                         <div className="ccd-name">Colorcode•Design</div>
-                        <div className="ccdd-name">an open-source design system</div>
+                        <div className="ccdd-name"><span style={{color: '#ffffff'}}>singulier</span> - an open-source design system</div>
                     </div>
                     <Separator size="10px"></Separator>
                     <div className="ccdd-about">A collection of components and design tools, suitable for web and mobile applications. We have the strong belief that beautiful web development should not be difficult to achieve.</div>

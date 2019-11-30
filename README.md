@@ -8,11 +8,11 @@
 
 <div align="center">A collection of components and design tools, suitable for web and mobile applications. We have the strong belief that beautiful web development should not be difficult to achieve.</div>
 
-<div align="center" style="margin-top: 20px">
+<div align="center" style="margin-top: 20px; margin-bottom: 20px">
   <a href="http://colorcode.design/about">get started</a> | <a href="http://colorcode.design/singulier">components</a> | <a href="http://colorcode.design/editor">live editor</a> | <a href="http://colorcode.design/palette">color palette</a> | <a href="http://colorcode.design/license">license</a>
 </div>
 
-<img src="https://img.shields.io/badge/-Please%20note%20that%20the%20project%20is%20still%20under%20a%20lot%20of%20development%20and%20bugs%20may%20occur.-red" />
+![](https://img.shields.io/badge/-Please%20note%20that%20the%20project%20is%20still%20under%20a%20lot%20of%20development%20and%20bugs%20may%20occur.-red)
 
 ## Quick start with components (Singulier)
 

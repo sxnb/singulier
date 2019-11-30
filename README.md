@@ -30,7 +30,7 @@ See more customization options in the [website docs](http://colorcode.design/sin
 
 
 ## Tools
-Other than Singulier, we provide some tools which we believe are helpful when creating an web app.
+Other than Singulier, we provide some tools which we believe are helpful when creating a web application.
 
 * [Color palette](http://www.colorcode.design/palette) - easily find sets of colors that go well together
 * [Live editor](http://www.colorcode.design/editor) - test Singulier components and customizations instantly

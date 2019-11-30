@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/-Please%20note%20that%20the%20project%20is%20still%20under%20a%20lot%20of%20development%20and%20bugs%20may%20occur.-red)
+
 <p align="center">
   <a href="https://getbootstrap.com/">
     <img src="http://about.colorcode.me/assets/logo-ccd-blue.png" alt="Colorcode Design logo" width="72">
@@ -11,8 +13,6 @@
 <div align="center" style="margin-top: 20px; margin-bottom: 20px">
   <a href="http://colorcode.design/about">get started</a> | <a href="http://colorcode.design/singulier">components</a> | <a href="http://colorcode.design/editor">live editor</a> | <a href="http://colorcode.design/palette">color palette</a> | <a href="http://colorcode.design/license">license</a>
 </div>
-
-![](https://img.shields.io/badge/-Please%20note%20that%20the%20project%20is%20still%20under%20a%20lot%20of%20development%20and%20bugs%20may%20occur.-red)
 
 ## Quick start with components (Singulier)
 

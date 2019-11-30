@@ -30,7 +30,7 @@ See more customization options in the [website docs](http://colorcode.design/sin
 
 ## Preview
 
-![](http://colorcode.design/gif/singulier_preview.gif)
+![](https://github.com/sxnb/singulier/blob/master/assets/singulier_preview.gif)
 
 ## Tools
 Other than Singulier, we provide some tools which we believe are helpful when creating a web application.

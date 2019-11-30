@@ -28,6 +28,9 @@
 
 See more customization options in the [website docs](http://colorcode.design/singulier).
 
+## Preview
+
+![](http://colorcode.design/gif/singulier_preview.gif)
 
 ## Tools
 Other than Singulier, we provide some tools which we believe are helpful when creating a web application.

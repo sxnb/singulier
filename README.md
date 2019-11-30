@@ -11,3 +11,5 @@
 <div align="center" style="margin-top: 20px">
   <a href="http://colorcode.design/about">get started</a> | <a href="http://colorcode.design/singulier">components</a> | <a href="http://colorcode.design/editor">live editor</a> | <a href="http://colorcode.design/palette">color palette</a> | <a href="http://colorcode.design/license">license</a>
 </div>
+
+<h3 style="color: #c0392b !important;">Please note that the project is still under a lot of development and bugs may occur.</h3>

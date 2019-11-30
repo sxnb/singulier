@@ -12,7 +12,7 @@
   <a href="http://colorcode.design/about">get started</a> | <a href="http://colorcode.design/singulier">components</a> | <a href="http://colorcode.design/editor">live editor</a> | <a href="http://colorcode.design/palette">color palette</a> | <a href="http://colorcode.design/license">license</a>
 </div>
 
-<div style="font-size: 24px; font-weight: bold; color: #c0392b; margin: 10px 0;">Please note that the project is still under a lot of development and bugs may occur.</div>
+<span style="font-size: 24px; font-weight: bold; color: red; margin: 10px 0;">Please note that the project is still under a lot of development and bugs may occur.</span>
 
 ## Quick start with components (Singulier)
 

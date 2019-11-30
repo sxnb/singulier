@@ -1,6 +1,6 @@
 import React from 'react';
 import { mapFactorToString } from './utils';
-import './scss/styles.scss';
+import '../scss/styles.scss';
 
 export const TabContainer = (props) => (<ul className="tabs-container" {...props}>{props.children}</ul>);
 export const Tab = (props) => (<li className={`tab${mapFactorToString('tab-', props.factor)}`} {...props}>{props.children}</li>);

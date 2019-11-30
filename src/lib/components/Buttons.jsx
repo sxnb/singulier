@@ -1,6 +1,6 @@
 import React from 'react';
 import { getExtraClassName, mapFactorToString } from "./utils";
-import './scss/styles.scss';
+import '../scss/styles.scss';
 
 export const Button = (props) => (<button {...props} className={`button-base${mapFactorToString('button-', props.factor)}${getExtraClassName(props.className)} `}>{props.children}</button>);
 export const ButtonPrimary = (props) => (<button {...props} className={`button-base button-primary${mapFactorToString('button-', props.factor)}${getExtraClassName(props.className)} `}>{props.children}</button>);

@@ -3,12 +3,12 @@ import copy from 'copy-to-clipboard';
 import * as tc from 'tinycolor2';
 import { ChromePicker } from 'react-color';
 import './styles.scss';
-import { Container, Enum, EnumItem, Row, Col, Separator } from '../../lib/Layout';
-import { Heading1, Heading3, Heading2, Text, Heading6 } from '../../lib/Typography';
-import { TextInput } from '../../lib/Forms';
-import { ButtonPrimary } from '../../lib/Buttons';
-import { ColorCircle } from '../../lib/Other';
-import { ToastContainer } from '../../lib/Toast';
+import { Container, Enum, EnumItem, Row, Col, Separator } from '../../lib';
+import { Heading1, Heading3, Heading2, Text, Heading6 } from '../../lib';
+import { TextInput } from '../../lib';
+import { ButtonPrimary } from '../../lib';
+import { ColorCircle } from '../../lib';
+import { ToastContainer } from '../../lib';
 
 export function Palette() {
     const toastRef = React.createRef();

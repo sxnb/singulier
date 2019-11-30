@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.scss";
-import { Button } from "../../../lib/Buttons";
+import { Button } from "../../../lib";
 import {
   Container,
   Content,
@@ -13,7 +13,7 @@ import {
   CardHeader,
   CardBody,
   Separator
-} from "../../../lib/Layout";
+} from "../../../lib";
 import {
   SelectInput,
   TextInput,
@@ -22,13 +22,13 @@ import {
   DropdownList,
   Checkbox,
   RadioOption
-} from "../../../lib/Forms";
+} from "../../../lib";
 import {
   Modal,
   ModalHeader,
   ModalContent,
   ModalFooter
-} from "../../../lib/Modal";
+} from "../../../lib";
 import {
   Heading2,
   Heading3,
@@ -36,7 +36,7 @@ import {
   Icon,
   Code,
   Hint
-} from "../../../lib/Typography";
+} from "../../../lib";
 import {
   TableHeader,
   TableHeaderCell,
@@ -45,9 +45,9 @@ import {
   TableRow,
   TableCell,
   TableHeaderRow
-} from "../../../lib/Table";
-import { NavContainer, NavItem, NavSeparator } from "../../../lib/Nav";
-import { Alert, Initials, Badge } from "../../../lib/Other";
+} from "../../../lib";
+import { NavContainer, NavItem, NavSeparator } from "../../../lib";
+import { Alert, Initials, Badge } from "../../../lib";
 
 export function Dashboard() {
   const [showMenu, setShowMenu] = useState(false);

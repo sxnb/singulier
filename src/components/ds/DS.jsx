@@ -3,16 +3,16 @@ import { useHistory } from 'react-router';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { github as docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Button } from '../../lib/Buttons';
-import { Card, Container, Enum, EnumItem, CardHeader, CardBody, Row, Col, Header, Footer, Separator, Content } from '../../lib/Layout';
-import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Hint, Code, Icon, Text } from '../../lib/Typography';
-import { SelectInput, TextInput, Textarea, DropdownToggle, DropdownList, Checkbox, RadioOption } from '../../lib/Forms';
-import { Badge, Breadcrumbs, Breadcrumb, Progress, Avatar, Initials, Spinner, Tooltip, Alert } from '../../lib/Other';
-import { ToastContainer } from '../../lib/Toast';
-import { Modal, ModalHeader, ModalContent, ModalFooter } from '../../lib/Modal';
+import { Button } from '../../lib';
+import { Card, Container, Enum, EnumItem, CardHeader, CardBody, Row, Col, Header, Footer, Separator, Content } from '../../lib';
+import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Hint, Code, Icon, Text } from '../../lib';
+import { SelectInput, TextInput, Textarea, DropdownToggle, DropdownList, Checkbox, RadioOption } from '../../lib';
+import { Badge, Breadcrumbs, Breadcrumb, Progress, Avatar, Initials, Spinner, Tooltip, Alert } from '../../lib';
+import { ToastContainer } from '../../lib';
+import { Modal, ModalHeader, ModalContent, ModalFooter } from '../../lib';
 import './styles.scss';
-import { TableHeader, TableHeaderCell, Table, TableBody, TableRow, TableCell, TableHeaderRow } from '../../lib/Table';
-import { TabContainer, Tab, PillContainer, Pill, NavContainer, NavItem, NavSeparator } from '../../lib/Nav';
+import { TableHeader, TableHeaderCell, Table, TableBody, TableRow, TableCell, TableHeaderRow } from '../../lib';
+import { TabContainer, Tab, PillContainer, Pill, NavContainer, NavItem, NavSeparator } from '../../lib';
 import codesamples from '../../assets/codesamples.js';
 
 export function DS(props) {

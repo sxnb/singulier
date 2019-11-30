@@ -1,6 +1,6 @@
 import React from 'react';
 import { mapFactorToString, getExtraClassName } from './utils';
-import './scss/typography.scss';
+import '../scss/typography.scss';
 
 export const Heading1 = (props) => (<h1 {...props} className={`${mapFactorToString('heading-', props.factor)}${getExtraClassName(props.className)}`}>{props.children}</h1>);
 export const Heading2 = (props) => (<h2 {...props} className={`${mapFactorToString('heading-', props.factor)}${getExtraClassName(props.className)}`}>{props.children}</h2>);

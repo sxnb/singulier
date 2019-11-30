@@ -1,6 +1,6 @@
 import React from "react";
 import { getExtraClassName, mapFactorToString } from "./utils";
-import "./scss/styles.scss";
+import '../scss/styles.scss';
 
 const mapColfactorToString = (prefix, factor) => {
   if (!factor) return "";

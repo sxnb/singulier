@@ -1,6 +1,6 @@
 import React from 'react';
 import { mapFactorToString, getExtraClassName } from './utils';
-import './scss/styles.scss';
+import '../scss/styles.scss';
 
 /* badge */
 export const Badge = (props) => (

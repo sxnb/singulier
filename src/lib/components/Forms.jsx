@@ -1,6 +1,6 @@
 import React from 'react';
 import { mapFactorToString, factorContainsProperty, getExtraClassName } from './utils';
-import './scss/styles.scss';
+import '../scss/styles.scss';
 
 export const TextInput = (props) => (<input {...props} className={`form-input${mapFactorToString('input-', props.factor)}${getExtraClassName(props.className)}`}>{props.children}</input>);
 export const SelectInput = (props) => (<select {...props} className={`form-select-input${mapFactorToString('input-', props.factor)}${getExtraClassName(props.className)}`}>{props.children}</select>);

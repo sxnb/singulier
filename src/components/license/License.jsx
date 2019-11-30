@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.scss";
-import { Container, Row, Col, Card, CardHeader, CardBody, Separator } from "../../lib/Layout";
-import { Heading1, Heading4, Code } from "../../lib/Typography";
+import { Container, Row, Col, Card, CardHeader, CardBody, Separator } from "../../lib";
+import { Heading1, Heading4, Code } from "../../lib";
 
 export function License() {
   return (

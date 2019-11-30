@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
-import { Button } from '../../../lib/Buttons';
-import { Container, Row, Col, Card, CardHeader, CardBody, Separator } from '../../../lib/Layout';
-import { SelectInput, TextInput, Textarea, DropdownToggle, DropdownList, Checkbox, RadioOption } from '../../../lib/Forms';
-import { Modal, ModalHeader, ModalContent, ModalFooter } from '../../../lib/Modal';
-import { Heading3, Heading4, Code } from '../../../lib/Typography';
+import { Button } from '../../../lib';
+import { Container, Row, Col, Card, CardHeader, CardBody, Separator } from '../../../lib';
+import { SelectInput, TextInput, Textarea, DropdownToggle, DropdownList, Checkbox, RadioOption } from '../../../lib';
+import { Modal, ModalHeader, ModalContent, ModalFooter } from '../../../lib';
+import { Heading3, Heading4, Code } from '../../../lib';
 
 export function Login() {
     return (

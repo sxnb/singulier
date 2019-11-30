@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import MonacoEditor from 'react-monaco-editor';
 import * as Babel from 'babel-core';
 import './styles.scss';
-import { Button, ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonOutlinePrimary, ButtonOutlineSecondary } from '../../lib/Buttons';
-import { Content, Card, Container, Enum, EnumItem, CardHeader, CardBody, Row, Col, Header, Footer, Separator } from '../../lib/Layout';
-import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Text, Hint, Code, Icon } from '../../lib/Typography';
-import { SelectInput, TextInput, Textarea, DropdownToggle, DropdownList, Checkbox, RadioOption } from '../../lib/Forms';
-import { Badge, Breadcrumbs, Breadcrumb, Progress, Avatar, Initials, Alert, Spinner } from '../../lib/Other';
-import { Modal, ModalHeader, ModalContent, ModalFooter } from '../../lib/Modal';
-import { TableHeader, TableHeaderCell, Table, TableBody, TableRow, TableCell, TableHeaderRow } from '../../lib/Table';
-import { TabContainer, Tab, PillContainer, Pill, NavContainer, NavItem, NavSeparator } from '../../lib/Nav';
+import { Button } from '../../lib';
+import { Content, Card, Container, Enum, EnumItem, CardHeader, CardBody, Row, Col, Header, Footer, Separator } from '../../lib';
+import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Text, Hint, Code, Icon } from '../../lib';
+import { SelectInput, TextInput, Textarea, DropdownToggle, DropdownList, Checkbox, RadioOption } from '../../lib';
+import { Badge, Breadcrumbs, Breadcrumb, Progress, Avatar, Initials, Alert, Spinner } from '../../lib';
+import { Modal, ModalHeader, ModalContent, ModalFooter } from '../../lib';
+import { TableHeader, TableHeaderCell, Table, TableBody, TableRow, TableCell, TableHeaderRow } from '../../lib';
+import { TabContainer, Tab, PillContainer, Pill, NavContainer, NavItem, NavSeparator } from '../../lib';
 import DS from '../ds';
 import codesamples from '../../assets/codesamples.js';
 
@@ -61,8 +61,7 @@ export class Editor extends React.Component {
     }
 
     getComponentsObj = () => {
-        return { InjectableComponent, Content, Button, ButtonPrimary, ButtonSecondary, ButtonTertiary, 
-            ButtonOutlinePrimary, ButtonOutlineSecondary, Card, Container, Enum, EnumItem, 
+        return { InjectableComponent, Content, Button, Card, Container, Enum, EnumItem, 
             CardHeader, CardBody, Row, Col, Header, Footer, Separator, Heading1, Heading2, Heading3, 
             Heading4, Heading5, Heading6, Hint, Code, Icon, SelectInput, TextInput, Badge, Alert,
             Breadcrumbs, Breadcrumb, Progress, Avatar, Initials, Spinner, Modal, ModalHeader, ModalContent, 
@@ -114,9 +113,9 @@ export class Editor extends React.Component {
                         </Col>
                         <Col factor="col-4 pull-right">
                             <Content>
-                                <ButtonSecondary onClick={this.showComponentsModal}>
+                                <Button factor="secondary" onClick={this.showComponentsModal}>
                                     Components quick view <Icon name="external-link-outline"></Icon>
-                                </ButtonSecondary>
+                                </Button>
                             </Content>
                         </Col>
                     </Row>

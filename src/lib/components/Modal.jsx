@@ -1,6 +1,6 @@
 import React from 'react';
-import './scss/styles.scss';
 import { mapFactorToString, getExtraClassName } from './utils';
+import '../scss/styles.scss';
 
 const isInline = (factor) => {
     return factor && factor.split(' ').indexOf('inline') !== -1;

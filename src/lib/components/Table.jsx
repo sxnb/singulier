@@ -1,5 +1,5 @@
 import React from 'react';
-import './scss/styles.scss';
+import '../scss/styles.scss';
 
 export const Table = (props) => (<table className="table" {...props}>{props.children}</table>);
 export const TableHeader = (props) => (<thead className="table-header" {...props}>{props.children}</thead>);

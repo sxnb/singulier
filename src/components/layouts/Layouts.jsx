@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
-import { Container, Row, Col, Card, CardHeader, CardBody, Separator, Enum, EnumItem } from '../../lib/Layout';
-import { Heading1, Heading4, Code, Text } from '../../lib/Typography';
-import { Button } from '../../lib/Buttons';
-import { ModalHeader, ModalContent, ModalFooter, Modal } from '../../lib/Modal';
+import { Container, Row, Col, Card, CardHeader, CardBody, Separator, Enum, EnumItem } from '../../lib';
+import { Heading1, Heading4, Code, Text } from '../../lib';
+import { Button } from '../../lib';
+import { ModalHeader, ModalContent, ModalFooter, Modal } from '../../lib';
 import codesamples from '../../assets/codesamples';
-import { Textarea } from '../../lib/Forms';
+import { Textarea } from '../../lib';
 
 export function Layouts() {
     const [showModal, setShowModal] = useState(false);

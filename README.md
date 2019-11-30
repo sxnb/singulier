@@ -12,4 +12,31 @@
   <a href="http://colorcode.design/about">get started</a> | <a href="http://colorcode.design/singulier">components</a> | <a href="http://colorcode.design/editor">live editor</a> | <a href="http://colorcode.design/palette">color palette</a> | <a href="http://colorcode.design/license">license</a>
 </div>
 
-<h3 style="color: #c0392b !important;">Please note that the project is still under a lot of development and bugs may occur.</h3>
+<div style="font-size: 24px; font-weight: bold; color: #c0392b; margin: 10px 0;">Please note that the project is still under a lot of development and bugs may occur.</div>
+
+## Quick start with components (Singulier)
+
+* Install from npm:
+```npm install @colorcode/singulier```
+
+* Include components in your application:
+```import { Button } from '@colorcode/singulier';```
+
+* Customize your component using the `factor` property
+```<Button factor="primary outline">primary</Button>```
+
+See more customization options in the [website docs](http://colorcode.design/singulier).
+
+
+## Tools
+Other than Singulier, we provide some tools which we believe are helpful when creating an web app.
+
+* [Color palette](http://www.colorcode.design/palette) - easily find sets of colors that go well together
+* [Live editor](http://www.colorcode.design/editor) - test Singulier components and customizations instantly
+* [Sample layouts](http://www.colorcode.design/layouts) - a few sample layouts that are built using Singulier components
+
+## License
+The license terms are available [here](http://www.colorcode.design/license).
+
+## About
+Built by one individual. See more of my work [here](http://about.colorcode.me).

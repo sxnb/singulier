@@ -2,7 +2,7 @@
 <br /><br />
 
 <p align="center">
-  <a href="https://getbootstrap.com/">
+  <a href="https://colorcode.design/">
     <img src="http://about.colorcode.me/assets/logo-ccd-blue.png" alt="Colorcode Design logo" width="72">
   </a>
 </p>

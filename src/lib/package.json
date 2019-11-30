@@ -1,6 +1,6 @@
 {
   "name": "singulier",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Singulier design system, by Colorcode design.",
   "main": "build/index.js",
   "scripts": {

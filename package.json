@@ -2,7 +2,7 @@
   "name": "components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://colorcode.design/live",
+  "homepage": "http://colorcode.design/",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-react": "^6.24.1",

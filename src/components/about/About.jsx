@@ -22,7 +22,7 @@ export function About() {
                 <Col factor="col-3 col-md-6 col-sm-12">
                     <Card>
                         <CardHeader>install</CardHeader>
-                        <CardBody><Code>npm install @colorcode/design --save</Code></CardBody>
+                        <CardBody><Code>npm install singulier --save</Code></CardBody>
                     </Card>
                 </Col>
                 <Col factor="col-3 col-md-6 col-sm-12">
